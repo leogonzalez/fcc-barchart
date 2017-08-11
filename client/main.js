@@ -1,3 +1,5 @@
+import * as d3 from 'd3';
+
 d3.json('https://raw.githubusercontent.com/FreeCodeCamp/ProjectReferenceData/master/GDP-data.json',(data) => {
 
 	const dataNew = data['data'].map((d) => [d[0],d[1]]);
